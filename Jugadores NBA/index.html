@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+  <head>
+    <meta charset="utf-8">
+    <title>PLAYERS OF THE NBA</title>
+    <link rel="stylesheet" href="estilo-dos-columnas.css">
+    <link rel="icon" type="image/png" href="Imagenes/DAILYNBA.png">
+    <style>
+      /* Estilos del menú desplegable */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+  
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+  
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+  
+      .dropdown-content a:hover {
+        background-color: #ffffff;
+      }
+  
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+  
+      /* Estilos adicionales para mejorar la apariencia */
+      body {
+        font-family: Arial, sans-serif;
+      }
+  
+      .dropdown:hover .dropbtn {
+        background-color: #ffffff;
+      }
+  
+      .dropdown:hover .dropbtn:hover {
+        background-color: #ffffff;
+      }
+  
+    </style>
+  </head>
+  <body>
+    <div id="contenedor">
+      <div id="cabecera">
+        <p>Fluid HTML/CSS Design.</p>
+      </div>
+      <div id="columnas">
+        <div id="menu">
+          <h1>PLAYERS OF THE NBA</h1> 
+          <div class="dropdown">
+            <button class="dropbtn">PLAYERS</button>
+            <div class="dropdown-content">
+              <a href="Stephen-curry.html">Stephen Curry</a>
+              <a href="Lebron-James.html">Lebron James</a>
+              <a href="Kevin-Durant.html">Kevin Durant</a>
+              <a href="Michael-Jordan.html">Michael Jordan</a>
+            </div>
+          </div>
+        </div>
+        <img src="imagenes/NBA.jpg" width="400" height="200" alt="Fotografía de Stephen Curry.">
+      </div>
+    </div>
+  </body>
+</html>
+
