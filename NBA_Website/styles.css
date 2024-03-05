@@ -14,17 +14,23 @@
     width: 80px; /* Reducir el tamaño de las imágenes en tabletas */
   }
 }
-
 @media only screen and (max-width: 576px) {
   /* Estilos específicos para dispositivos móviles */
   .main__heading {
     font-size: 1.2em; /* Reducir aún más el tamaño del encabezado principal para dispositivos móviles */
   }
 
+  .varias {
+    width: 100%; /* Ajustar el ancho del contenedor de imágenes para dispositivos móviles */
+    height: auto; /* Permitir que la altura del contenedor de imágenes se ajuste automáticamente */
+    margin: auto; /* Centrar el contenedor de imágenes */
+  }
+
   .varias img {
     width: 60px; /* Reducir aún más el tamaño de las imágenes para dispositivos móviles */
   }
 }
+
 
 html {
   font-family: Arial, Helvetica, sans-serif;
@@ -287,14 +293,14 @@ section {
   padding: 10px;
   border: 1px solid rgb(64, 64, 64);
   border-radius: 5px;
+  width: calc(100% - 22px);
 }
 
 .rsvp {
-  margin: 10px;
   padding: 10px;
-  width: 200px;
-  border: 2px solid #ddd;
+  border: 1px solid rgb(64, 64, 64);
   border-radius: 5px;
+  
 }
 
 .flex-container {
@@ -308,12 +314,19 @@ section {
   box-shadow: 2px 2px 10px 0 rgba(0, 0, 0, 0.5);
 }
 
+.grid-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  align-items: center;
+}
+
 #contact {
   background-color: rgb(74, 74, 74);
 }
 
 .reservation {
-  width: 60%;
+  width: 80%;
   padding: 10px;
   border-radius: 8px;
   margin: 0 auto;
@@ -323,7 +336,7 @@ section {
 }
 
 .reservation h2 {
-  width: 70%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   color: #13161b;
@@ -346,24 +359,16 @@ section {
 }
 
 .reservation p {
-  color: #13161b;
-  width: 50%;
+ text-align: center;
+  width: 100%;
   margin: 0 auto;
+
 }
 
 .reservation form {
-  font-size: 15px;
-  outline: none;
-  font-weight: 600;
-  color: #ebebeb;
-  padding: 12px 12px;
-  width: 70%;
-  border: 1px solid #808080;
   margin: 0 auto;
-  border-radius: 7px;
-  background: rgb(129, 129, 133);
-  box-shadow: 2px 3px 3px 0px rgba(0, 0, 0, 0.3);
-  font-family: "Raleway", sans-serif;
+  text-align: center;
+  width: 100%;
 }
 
 .reservation input [type="text"] {
@@ -386,30 +391,29 @@ section {
 
 .reservation input[type="text"]:hover {
   box-shadow: 0 0 5px rgb(184, 184, 184);
+  
 }
 
 .form-spacer {
   padding: 30px 39px;
+  text-align: center;
+  grid-column: 1 / -1;
 }
 
 .terms {
-  margin: 30px 1px 0 0;
-  margin-top: 13%;
-  padding-left: 52px;
-  font-size: 14px;
-  line-height: 5px;
-  color: #000;
-  cursor: pointer;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  position: relative;
-  display: inline;
-  float: right;
+ 
+  text-align: center;
+  grid-column: auto;
 }
 
 .terms:hover {
   color: rgb(0, 0, 0);
+  
   text-decoration: underline;
+}
+.submit {
+  grid-column: 1 / -1;
+  text-align: center;
 }
 
 .submit input[type="submit"] {
@@ -420,9 +424,7 @@ section {
   outline: none;
   text-align: center;
   font-family: "Raleway", sans-serif;
-  margin: 0px 3%;
   padding: 7px 0px;
-  width: 25%;
   font-size: 18px;
   transition: border-color 0.3s color 0.3s background-color 0.3s;
   border-radius: 7px;
@@ -430,8 +432,8 @@ section {
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.5);
 }
 
-.submit input [type="submit"]:hover {
-  color: #000;
+.submit input[type="submit"]:hover {
+  color: #ffffff;
   background-color: rgb(40, 40, 40);
   box-shadow: inset 1px 2px 15px 0 rgba(0, 0, 0, 0.5);
 }
@@ -660,19 +662,21 @@ ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 900px;
-  height: 430px;
-  margin: auto;
+  max-width: 100%;
 }
 .varias img{
   width: 100px;
+  height: auto;
   flex-grow: 1;
   object-fit: cover;
   opacity: .8;
   transition: .5s ease;
+  max-width: 250px;
+  
 }
 .varias img:hover{
   width: 300px;
   opacity: 1;
   filter: contrast(120%);
+  
 }
