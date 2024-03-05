@@ -32,6 +32,8 @@
 }
 
 
+
+
 html {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 63.5%;
@@ -49,6 +51,7 @@ body {
   color: #333;
   background-color: rgb(255, 255, 255);
 }
+
 
 .wrapper {
   width: 100%;
@@ -665,7 +668,7 @@ ul {
   max-width: 100%;
 }
 .varias img{
-  width: 100px;
+  width: 210px;
   height: auto;
   flex-grow: 1;
   object-fit: cover;
@@ -680,3 +683,4 @@ ul {
   filter: contrast(120%);
   
 }
+
