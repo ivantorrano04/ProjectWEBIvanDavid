@@ -1,67 +1,29 @@
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
+@media only screen and (max-width: 768px) {
+  /* Estilos específicos para tabletas */
+  .main__heading {
+    font-size: 1.5em; /* Reducir tamaño del encabezado principal */
+  }
 
-@media (min-width: 1281px) {
+  .varias {
+    width: 100%; /* Ajustar el ancho del contenedor de imágenes */
+    height: auto; /* Permitir que la altura del contenedor de imágenes se ajuste automáticamente */
+    margin: auto; /* Centrar el contenedor de imágenes */
+  }
   
-  /* CSS */
-  
+  .varias img {
+    width: 80px; /* Reducir el tamaño de las imágenes en tabletas */
+  }
 }
 
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
+@media only screen and (max-width: 576px) {
+  /* Estilos específicos para dispositivos móviles */
+  .main__heading {
+    font-size: 1.2em; /* Reducir aún más el tamaño del encabezado principal para dispositivos móviles */
+  }
 
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-  
-  /* CSS */
-  
+  .varias img {
+    width: 60px; /* Reducir aún más el tamaño de las imágenes para dispositivos móviles */
+  }
 }
 
 html {
@@ -696,8 +658,11 @@ ul {
 
 .varias{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 900px;
   height: 430px;
+  margin: auto;
 }
 .varias img{
   width: 100px;
